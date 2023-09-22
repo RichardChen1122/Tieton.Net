@@ -7,12 +7,12 @@ namespace Tieton.Net
         static async Task Main(string[] args)
         {
 
-            await WouldTimeoutInTheMiddelOfIteration();
+                       
             Console.ReadKey();
         }
 
 
-        static async Task WouldNotTimeout()
+        public static async Task WouldNotTimeout()
         {
             var lines = IAsyncEnumerableDemo.ReadAllLines(@"D:\feature.json");
 
@@ -26,7 +26,7 @@ namespace Tieton.Net
         }
 
 
-        static async Task WouldTimeoutInTheMiddelOfIteration()
+        public static async Task WouldTimeoutInTheMiddelOfIteration()
         {
             var lines = IAsyncEnumerableDemo.ReadAllLines(@"D:\feature.json");
 
